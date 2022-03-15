@@ -1,0 +1,53 @@
+{
+  "id": "blog-home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "postsDestaque": {
+        "config": {
+          "label": "Posts Destaque",
+          "placeholder": "Posts em destaque",
+          "fields": {
+            "postEmDestaque": {
+              "config": {
+                "label": "Post",
+                "customtypes": [
+                  "blog-post"
+                ],
+                "select": "document"
+              },
+              "type": "Link"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    },
+    "SEO": {
+      "tituloMeta": {
+        "config": {
+          "label": "Titulo Meta",
+          "placeholder": "Título meta para o SEO do Blog"
+        },
+        "type": "Text"
+      },
+      "descricaoMeta": {
+        "config": {
+          "label": "Descricao Meta",
+          "placeholder": "Descrição meta do SEO do Blog"
+        },
+        "type": "Text"
+      },
+      "imagemMeta": {
+        "config": {
+          "label": "Imagem Meta do SEO",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

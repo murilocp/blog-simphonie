@@ -1,0 +1,76 @@
+{
+  "id": "blog-post",
+  "label": "Post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "titulo": {
+        "config": {
+          "label": "Titulo",
+          "placeholder": "Título do post",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        },
+        "type": "StructuredText"
+      },
+      "subtitulo": {
+        "config": {
+          "label": "Subtitulo",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading2,heading3,heading4,heading5,heading6,strong,em"
+        },
+        "type": "StructuredText"
+      },
+      "imagem": {
+        "config": {
+          "label": "Imagem principal do post",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "conteudo": {
+        "config": {
+          "label": "Conteudo",
+          "placeholder": "Conteúdo do post",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      }
+    },
+    "SEO": {
+      "tituloMeta": {
+        "config": {
+          "label": "Título Meta",
+          "placeholder": "Título para o SEO do post"
+        },
+        "type": "Text"
+      },
+      "descricaoMeta": {
+        "config": {
+          "label": "Descrição Meta",
+          "placeholder": "Descrição meta para o SEO do post"
+        },
+        "type": "Text"
+      },
+      "imagemMeta": {
+        "config": {
+          "label": "Imagem Meta",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

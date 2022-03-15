@@ -1,0 +1,27 @@
+{
+  "_cts": {
+    "blog-post": {
+      "titulo": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "subtitulo": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "conteudo": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    },
+    "blog-home": {
+      "postsDestaque": {}
+    }
+  }
+}
