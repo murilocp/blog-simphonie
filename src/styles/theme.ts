@@ -8,9 +8,22 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: '#E5E5E5',
-        color: '#4F4F4F',
+        bg: '#fff',
+        color: '#000',
       },
+      h1: { fontSize: '2.5rem', fontWeight: 'bold' },
+      h2: { fontSize: '2rem', fontWeight: 'bold' },
+      h3: { fontSize: '1.5rem', fontWeight: 'bold' },
+      h4: { fontSize: '1rem', fontWeight: '500' },
+      h5: {
+        fontSize: '.5rem',
+        fontWeight: '400',
+      },
+    },
+  },
+  colors: {
+    brand: {
+      500: '#040404',
     },
   },
 });

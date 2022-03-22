@@ -1,28 +1,43 @@
-import { FC } from 'react';
-import { GetStaticProps } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 
 import { createClient } from '../../prismicio';
 
-import SEO from '../components/SEO';
+import SEO from 'components/SEO';
 import { IBlogProps, PrismicBlogPage } from 'types/Blog';
 
-const Home: FC<IBlogProps> = ({ pageContent }) => {
+import { Container } from 'styles/pages/Home';
+import { Box, Flex, Input, Stack, Text } from '@chakra-ui/react';
+
+const Home: NextPage<IBlogProps> = ({ pageContent }) => {
   if (!pageContent) {
     return null;
   }
 
-  console.log(pageContent);
-
   return (
-    <div>
+    <Container>
       <SEO
         title={pageContent.tituloMeta}
         description={pageContent.descricaoMeta}
         image={pageContent.imagemMeta.url}
       />
 
-      <h1>Blog</h1>
-    </div>
+      <Box paddingY={20} marginX="auto" maxWidth="1180px">
+        <Flex marginBottom={6}>
+          <Box width="60%" bgImage="/assets/logo.webp">
+            <Stack justify="end">
+              <Box bgColor="#e0e0e020" padding="16px 24px">
+                <Text as="h3">Lorem ipsum dolor</Text>
+              </Box>
+            </Stack>
+          </Box>
+          <Box width="35%"></Box>
+        </Flex>
+
+        <Flex>
+          <Input placeholder="Procurar..." />
+        </Flex>
+      </Box>
+    </Container>
   );
 };
 
